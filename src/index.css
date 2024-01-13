@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        margin: 0;
+        @apply bg-primaryBackground;
+        @apply text-primarytext;
+    }
+}
+
+@keyframes append-animate {
+    from {
+        tranform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.new-arrow {
+    animation: append-aniumate 0.5s ease-out ;
+}
